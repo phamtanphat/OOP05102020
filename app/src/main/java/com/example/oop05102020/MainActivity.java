@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         // Tạo ra 1 instance (Tạo ra 1 cá thể)
 
         Predator cop = new Predator("Cọp",90 , "Thịt bò");
-        cop.getName();
-        cop.setName("Cọp");
+        Log.d("BBB",cop.getName());
     }
 }
