@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Tạo ra 1 instance (Tạo ra 1 cá thể)
-        Animal meo = new Animal("Doremon" , 5);
-        meo.setName("");
+
+        Predator cop = new Predator("Cọp",90 , "Thịt bò");
+        cop.getName();
+        cop.setName("Cọp");
     }
 }

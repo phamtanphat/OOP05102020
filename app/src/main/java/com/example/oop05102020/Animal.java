@@ -2,8 +2,8 @@ package com.example.oop05102020;
 
 public class Animal {
     // 1 : Thuộc tính
-    String name;
-    Integer weight;
+    private String name;
+    private Integer weight;
 
     // constructor
     public Animal(String name , Integer weight){
@@ -18,5 +18,13 @@ public class Animal {
 
     public String getName(){
         return name;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
     }
 }
