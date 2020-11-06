@@ -2,6 +2,7 @@ package com.example.oop05102020;
 
 public class Animal {
     // 1 : Thuộc tính
+    static String category = "Animal";
     private String name;
     private Integer weight;
 

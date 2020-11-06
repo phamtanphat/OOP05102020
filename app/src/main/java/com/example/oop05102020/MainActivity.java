@@ -1,19 +1,18 @@
 package com.example.oop05102020;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // Tạo ra 1 instance (Tạo ra 1 cá thể)
-
-        Predator cop = new Predator("Cọp",90 , "Thịt bò");
-        Log.d("BBB",cop.getName());
+    int getLayout() {
+        return R.layout.activity_main;
     }
 }
