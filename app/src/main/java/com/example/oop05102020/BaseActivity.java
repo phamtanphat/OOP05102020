@@ -7,13 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-    abstract int getLayout();
+    protected abstract int getLayout();
+    protected abstract void initView();
+    protected abstract void event();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
+        initView();
+        event();
     }
-    public void showError(String message){
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-    }
+
 }
